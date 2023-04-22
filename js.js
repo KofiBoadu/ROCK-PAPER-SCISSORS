@@ -82,4 +82,23 @@ function play_round(player, computer_play){
 }
 
 
-console.log(play_round(player_selection("ROCK"),computer_choice()));
+function game(number_play){
+    let player_score= 0;
+    let computer_score= 0;
+    for(let i=0; i <= number_play; i++){
+        let results= play_round(player_selection("ROCK"),computer_choice());
+        if(results===win()){
+            player_score+=1
+        }else if(results===lose()){
+            computer_score+=1;
+        }
+    }
+    if(player_score > computer_score){
+        return "You won!!";
+    }else {
+       return "You lose!!";
+    }
+}
+
+
+console.log(game(10))
