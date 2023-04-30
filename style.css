@@ -1,0 +1,53 @@
+.play_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+  
+  .play_buttons button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .play_buttons button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  p.win {
+    color: green;
+  }
+  
+  p.lose {
+    color: red;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .play_buttons button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+    }
+    
+    p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+  }
+  
